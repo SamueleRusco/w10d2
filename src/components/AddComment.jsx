@@ -30,8 +30,7 @@ const AddComment = (props) => {
     }
   });
 
-  sendComment = async (e) => {
-    e.preventDefault();
+  const sendComment = async (e) => {
     try {
       let response = await fetch(
         "https://striveschool-api.herokuapp.com/api/comments",
